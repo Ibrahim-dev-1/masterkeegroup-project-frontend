@@ -1,0 +1,8 @@
+.login-container{
+    background: url("../assets/img/i.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+}

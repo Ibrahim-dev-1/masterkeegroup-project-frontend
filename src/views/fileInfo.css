@@ -1,0 +1,41 @@
+.kratos-switch input{ display: none;}
+.kratos-switch{
+    width: 2.2rem;
+    height: 1.2rem;
+    position: relative;
+}
+.kratos-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
+    background: #dddddd;
+    transition: background 0.3s ease-in-out;
+}
+
+.kratos-slide::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.kratos-switch input:checked + .kratos-slide{
+    background: rgb(39, 126, 255);
+}
+.kratos-switch input:checked + .kratos-slide::before{
+    transform: translateX(95%);
+}
+
+.kratos-text{
+    font-weight: bold;
+    margin-left: 0.2rem;
+}
